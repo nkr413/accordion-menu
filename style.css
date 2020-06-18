@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+* {transition: 0.2s ease-in-out; user-select: none; font-family: 'Montserrat', sans-serif;}
+button:focus {outline: none;}
+
+.main-block {
+  border: 2px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  position: relative;
+  top: 60px;
+  padding: 8px;
+}
+
+.tabs-block {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tabs-block button {
+  cursor: pointer;
+  background: springgreen;
+  border: 2px solid green;
+  font-size: 20pt;
+  padding: 8px;
+  letter-spacing: 1px;
+  margin-top: -2px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs-block button div:nth-of-type(2) {
+  font-size: 17pt;
+  padding-right: 10px; 
+  transform: rotate(0deg) translateX(0px);
+  transition: 0.0s ease-in-out;
+}
+
+.tabs-block button + div {
+  border: 2px solid green;
+  background: azure;
+  margin-top: -2px;
+  display: none; 
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: 2px 3px 10px #c0c0c0, -2px 0px 10px #c0c0c0;
+}
+.tabs-block button + div > div:nth-of-type(3) {border-radius: 0px 0px 8px 8px;}
+
+.tab-block-one div,
+.tab-block-two div, 
+.tab-block-the div,
+.tab-block-fou div {
+  border: 2px solid transparent;
+  padding: 8px;
+  font-size: 18pt;
+  letter-spacing: 1px;
+  padding-left: 20px;
+}
+
+.tab-block-one div:hover, 
+.tab-block-two div:hover,
+.tab-block-the div:hover,
+.tab-block-fou div:hover {background: palegreen; border-top: 2px solid green;border-bottom: 2px solid green;}
+.tab-block-one div:nth-of-type(1):hover, 
+.tab-block-two div:nth-of-type(1):hover,
+.tab-block-the div:nth-of-type(1):hover,
+.tab-block-fou div:nth-of-type(1):hover {border-top: 2px solid transparent;border-bottom: 2px solid green;}
+.tab-block-one div:nth-of-type(3):hover, 
+.tab-block-two div:nth-of-type(3):hover,
+.tab-block-the div:nth-of-type(3):hover,
+.tab-block-fou div:nth-of-type(3):hover {border-top: 2px solid green;border-bottom: 2px solid transparent;}
+
+.tab-block-one,
+.tab-block-two, 
+.tab-block-the {margin-bottom: 14px;}
